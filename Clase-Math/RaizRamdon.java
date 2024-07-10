@@ -14,6 +14,18 @@ public class RaizRamdon {
             double raizNum = Math.sqrt(flooredNum);
             double raizNumRedondeo = Math.floor(raizNum);
 
+            String valor = "";
+            
+            for (int i = 2; i < numeroLimite; i++) {
+                if (numeroLimite % i == 0) {
+                    valor = "no es primo ";
+                    break;
+                } else {
+                    valor = "es primo ";
+                }
+            }
+
+            System.out.println("El número " + valor);
             System.out.println("El numero aleatorio es: " + flooredNum);
             System.out.println("La raiz cuadrada del numero aleatorio es: " + raizNumRedondeo);
 
