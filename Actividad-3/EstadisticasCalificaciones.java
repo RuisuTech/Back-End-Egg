@@ -41,7 +41,7 @@ public class EstadisticasCalificaciones {
         for (int i = 0; i < cantidad; i++) {
             // Generamos una calificación aleatoria entre 1 y 20
             double calificacion = random.nextDouble() * 20 + 1;
-            calificaciones[i] = String.format("%.1f", calificacion);  // Convertimos el double a String
+            calificaciones[i] = String.format("%.1f", calificacion).replace(",", ".");  // Reemplazamos "," por "."
         }
 
         return calificaciones;
